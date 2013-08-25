@@ -99,6 +99,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.d/50selinuxrelabel:system/etc/init.d/50selinuxrelabel
 
+# Utilize init.d scripts
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/a2sd/etc/init.d/01sysctl:system/etc/init.d/01sysctl \
+    vendor/cm/prebuilt/a2sd/etc/init.d/03sdcard:system/etc/init.d/03sdcard \
+    vendor/cm/prebuilt/a2sd/etc/init.d/05mountext:system/etc/init.d/05mountext \
+    vendor/cm/prebuilt/a2sd/etc/init.d/06handleswap:system/etc/init.d/06handleswap \
+    vendor/cm/prebuilt/a2sd/etc/init.d/20extgapps:system/etc/init.d/20extgapps \
+    vendor/cm/prebuilt/a2sd/bin/a2sd:system/bin/a2sd \
+    vendor/cm/prebuilt/a2sd/xbin/zipalign:system/xbin/zipalign \
+    vendor/cm/prebuilt/a2sd/etc/init.d/10apps2sd-redux:system/etc/init.d/10apps2sd
+
 # CM-specific init file
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/etc/init.local.rc:root/init.cm.rc
