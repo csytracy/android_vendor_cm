@@ -174,7 +174,8 @@ PRODUCT_PACKAGES += \
     Apollo \
     CMUpdater \
     CMFileManager \
-    LockClock
+    LockClock \
+    CMAccount
 
 PRODUCT_PACKAGES += \
     CellBroadcastReceiver
@@ -216,7 +217,7 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION_MAJOR = 10
 PRODUCT_VERSION_MINOR = 1
-PRODUCT_VERSION_MAINTENANCE = 1-RC0
+PRODUCT_VERSION_MAINTENANCE = 3
 
 # Set CM_BUILDTYPE
 ifdef CM_NIGHTLY
